@@ -38,7 +38,7 @@ METRIC_DEFINE_counter(tablet, log_bytes_logged, "Bytes Written to WAL",
                       yb::MetricUnit::kBytes,
                       "Number of bytes logged since service start");
 
-METRIC_DEFINE_gauge_uint64(tablet, log_wal_size, "Size of WAL Files",
+METRIC_DEFINE_counter(tablet, log_wal_size, "Size of WAL Files",
                            yb::MetricUnit::kBytes,
                            "Size of wal files");
 
