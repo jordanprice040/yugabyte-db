@@ -70,7 +70,7 @@ namespace log {
 LogMetrics::LogMetrics(const scoped_refptr<MetricEntity>& table_metric_entity,
                        const scoped_refptr<MetricEntity>& tablet_metric_entity)
     : MINIT(tablet_metric_entity, bytes_logged),
-      GINIT(tablet_metric_entity, wal_size),
+      MINIT(tablet_metric_entity, wal_size),
       MINIT(table_metric_entity, sync_latency),
       MINIT(table_metric_entity, append_latency),
       MINIT(table_metric_entity, group_commit_latency),
