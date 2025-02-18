@@ -51,7 +51,7 @@ struct LogMetrics {
 
   // Global stats
   scoped_refptr<Counter> bytes_logged;
-  scoped_refptr<AtomicGauge<uint64_t>> wal_size;
+  scoped_refptr<Counter> wal_size;
 
   // Per-group group commit stats
   scoped_refptr<EventStats> sync_latency;
